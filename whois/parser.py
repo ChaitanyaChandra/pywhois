@@ -407,7 +407,7 @@ class WhoisNet(WhoisEntry):
 
     def __init__(self, domain, text):
         if 'No match for "' in text:
-            raise PywhoisError(text)
+            pass
         else:
             WhoisEntry.__init__(self, domain, text)
 
